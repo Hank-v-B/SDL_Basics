@@ -188,6 +188,7 @@
   <ItemGroup>
     <ClCompile Include="CheckerboardRotation.cpp" />
     <ClCompile Include="FontMap.cpp" />
+    <ClCompile Include="FontScaler.cpp" />
     <ClCompile Include="MainApplication.cpp" />
     <ClCompile Include="Mesh3D.cpp" />
     <ClCompile Include="Pointlist2D.cpp" />
@@ -202,6 +203,7 @@
     <ClInclude Include="CheckerboardRotation.h" />
     <ClInclude Include="EngineBase.h" />
     <ClInclude Include="FontMap.h" />
+    <ClInclude Include="FontScaler.h" />
     <ClInclude Include="FTransform_3D.h" />
     <ClInclude Include="MainApplication.h" />
     <ClInclude Include="Mesh3D.h" />

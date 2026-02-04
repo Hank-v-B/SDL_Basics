@@ -48,6 +48,9 @@
     <ClCompile Include="SDLEvents.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="FontScaler.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="zlib1.dll">
@@ -155,6 +158,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="SDLEvents.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="FontScaler.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

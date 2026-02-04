@@ -33,8 +33,8 @@ int main(int argc, char* argv[]) {
 
 	if ((AppWindow = SDL_CreateWindow(
 		"Hank's Playground",
-		50,
-		50,
+		SDL_WINDOWPOS_CENTERED,
+		SDL_WINDOWPOS_CENTERED,
 		1600,
 		900,
 		SDL_WINDOW_HIDDEN)
@@ -121,15 +121,16 @@ void MainApplication::OnEvent(SDL_Event* Event)
 		break;
 
 	case SDL_KEYDOWN:
-		if (((SDL_KeyboardEvent*)Event)->keysym.sym == SDLK_RIGHT)
+		switch (Event->key.keysym.sym)
 		{
+		case SDLK_RIGHT:
 			if (_demoPart < 2) _demoPart++;
-		}
-		if (((SDL_KeyboardEvent*)Event)->keysym.sym == SDLK_LEFT)
-		{
+			break;
+
+		case SDLK_LEFT:
 			if (_demoPart > 0)_demoPart--;
+			break;
 		}
-		break;
 	}
 }
 
